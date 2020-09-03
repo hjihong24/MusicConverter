@@ -2,5 +2,7 @@
     "appService.zipIgnorePattern": [
         "node_modules{,/**}",
         ".vscode{,/**}"
-    ]
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/6a72c3e3-44cc-4c52-8a99-4be6791177c3/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/MusicConverter",
+    "appService.deploySubpath": "."
 }
