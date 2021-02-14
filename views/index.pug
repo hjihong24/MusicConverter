@@ -1,5 +1,17 @@
-extends layout
+extends layout 
 
 block content
+  script. 
+    var signInAM = function() {
+      var form = document.createElement('form');
+      form.setAttribute('method', 'POST');
+      form.setAttribute('action', '/AMSignIn');
+
+      document.body.appendChild(form);
+      form.submit();
+    }
+
   h1= title
-  p Welcome to #{title}
+  div
+      button(type='button', onClick='signInAM()')=appleMusicSignIn
+      button(type='button')=spotifySignIn
