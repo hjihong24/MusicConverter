@@ -5,15 +5,21 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', 
   { title: 'Music Converter incorporated by Noodley and Ghey',
-    appleMusicSignIn: "Sign in to Apple Music",
+    appleMusicSignIn: 'Sign in to Apple Music',
     spotifySignIn: 'Sign in to Spotify' });
 });
 
 router.post('/AMSignIn',  function(req, res) {
   res.render('index', 
   { title: 'Music Converter incorporated by Noodley and Ghey',
-    appleMusicSignIn: 'signed in!',
+    appleMusicSignIn: 'Signed in!',
     spotifySignIn: 'Sign in to Spotify' });
 });
 
+router.post('/SFSignIn',  function(req, res) {
+  res.render('index', 
+  { title: 'Music Converter incorporated by Noodley and Ghey',
+    appleMusicSignIn: 'Sign in to Apple Music',
+    spotifySignIn: 'Signed in!' });
+});
 module.exports = router;
